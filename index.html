@@ -27,7 +27,7 @@
 <!-- هيدر -->
 <header id="mainHeader">
   <nav class="nav">
-    <a href="#" class="logo"><img src="assets/logo.png" alt="المنال كوتور"></a>
+    <a href="#" class="logo"><span class="logo-text">المنال <em>كوتور</em></span></a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#hero">الرئيسية</a></li>
       <li><a href="#collections">المجموعات</a></li>
@@ -222,7 +222,7 @@ function renderProducts(filter='all'){
     const card = document.createElement('div');
     card.className = 'product-card';
     card.innerHTML = `
-      <div class="p-img"><img src="${p.img}" alt="${p.name}" loading="lazy"></div>
+      <div class="p-img"><img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#2a2115,#1e1c19)';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#8a8068;font-size:14px\'>${p.name}</div>'"></div>
       <div class="p-body">
         <span class="p-cat">${p.cat}</span>
         <h3 class="p-name">${p.name}</h3>
