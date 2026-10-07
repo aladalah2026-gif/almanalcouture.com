@@ -28,7 +28,10 @@ img{max-width:100%;display:block}
 /* هيدر */
 header{position:sticky;top:0;z-index:100;background:rgba(16,14,12,.78);backdrop-filter:blur(16px);border-bottom:1px solid rgba(212,175,55,.22);transition:transform .35s}
 .nav{max-width:1280px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 26px}
-.logo img{height:54px;width:auto;transition:.3s}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo img{height:56px;width:auto;transition:.3s}
+.logo-text{font-family:'Noto Naskh Arabic','Tajawal',serif;font-size:22px;font-weight:700;color:var(--ivory);letter-spacing:1px}
+.logo-text em{color:var(--gold);font-style:normal;font-weight:800}
 .logo:hover img{filter:drop-shadow(0 0 14px rgba(212,175,55,.5))}
 .nav-links{display:flex;gap:30px;align-items:center;list-style:none}
 .nav-links a{color:#ddd6c8;font-size:15px;font-weight:500;position:relative;transition:.3s}
@@ -73,7 +76,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(16,14,12,.78);backdrop-
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:28px}
 .product-card{background:linear-gradient(180deg,#1e1c19,#161412);border:1px solid rgba(212,175,55,.12);border-radius:16px;overflow:hidden;transition:.35s;position:relative}
 .product-card:hover{transform:translateY(-8px);border-color:rgba(212,175,55,.4);box-shadow:0 20px 50px rgba(0,0,0,.45)}
-.p-img{aspect-ratio:3/4;overflow:hidden}
+.p-img{aspect-ratio:3/4;overflow:hidden;background:linear-gradient(135deg,#2a2115,#1e1c19);display:flex;align-items:center;justify-content:center}
 .p-img img{width:100%;height:100%;object-fit:cover;transition:.5s}
 .product-card:hover .p-img img{transform:scale(1.06)}
 .p-body{padding:18px 20px 22px}
