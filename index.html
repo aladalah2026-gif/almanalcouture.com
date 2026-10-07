@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المنال كوتور | Almanal Couture — دار الأناقة اليمنية</title>
+<meta name="description" content="المنال كوتور — دار يمنية للتصميم والتفصيل الراقي. فساتين زفاف وسهرة وأطفال تُفصَّل يدوياً حسب الطلب. واتساب 783339447">
+<meta property="og:title" content="المنال كوتور | Almanal Couture">
+<meta property="og:image" content="assets/og.jpg">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Noto+Naskh+Arabic:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- شاشة التحميل -->
+<div id="loader">
+  <img src="assets/cover-logo.jpg" alt="المنال كوتور">
+  <div class="loader-bar"><i></i></div>
+  <p style="color:#8a8068;font-size:13px;margin-top:6px">جاري تحميل التشكيلة...</p>
+</div>
+
+<!-- شريط إعلانات -->
+<div class="ticker" id="tickerWrap"><div class="ticker-track" id="tickerTrack"></div></div>
+
+<!-- هيدر -->
+<header id="mainHeader">
+  <nav class="nav">
+    <a href="#" class="logo"><img src="assets/logo.png" alt="المنال كوتور"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">الرئيسية</a></li>
+      <li><a href="#collections">المجموعات</a></li>
+      <li><a href="#steps">كيفية الطلب</a></li>
+      <li><a href="#size">دليل المقاسات</a></li>
+      <li><a href="#faq">الأسئلة</a></li>
+      <li><a href="#contact">تواصل</a></li>
+      <li><a href="https://wa.me/967783339447?text=مرحباً%20المنال%20كوتور" class="nav-cta" target="_blank">اطلبي الآن</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="القائمة">☰</button>
+  </nav>
+</header>
+
+<!-- بطل -->
+<section class="hero" id="hero">
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-wrap">
+    <div class="hero-text">
+      <p class="label">دار الأناقة اليمنية</p>
+      <h1>أناقة تُفصّل<br><em>بذوقكِ</em></h1>
+      <p class="sub">فساتين زفاف · سهرة · أطفال — يدوية التفصيل، فاخرة التفاصيل</p>
+      <div class="hero-btns">
+        <a href="#collections" class="btn-gold">تصفّحي المجموعة</a>
+        <a href="https://wa.me/967783339447?text=مرحباً%20أود%20الاستفسار" class="btn-outline" target="_blank">تواصلي عبر واتساب</a>
+      </div>
+    </div>
+  </div>
+  <a href="#collections" class="scroll-hint">↓</a>
+</section>
+
+<!-- أرقام -->
+<section class="stats" id="stats">
+  <div class="stat" data-target="21"><span class="n">0</span><small>موديلاً</small></div>
+  <div class="stat" data-target="8"><span class="n">0</span><small>سنوات خبرة</small></div>
+  <div class="stat" data-target="350"><span class="n">0</span><small>عميلة سعيدة</small></div>
+  <div class="stat" data-target="14"><span class="n">0</span><small>يوماً متوسط التسليم</small></div>
+</section>
+
+<!-- المجموعات -->
+<section class="collections" id="collections">
+  <h2 class="sec-title">تشكيلة <em>المنال كوتور</em></h2>
+  <p class="sec-sub">21 موديلاً يدوياً — اختاري ما يناسب مناسبتكِ</p>
+  <div class="filters">
+    <button class="active" data-filter="all">الكل</button>
+    <button data-filter="زفاف">فساتين زفاف</button>
+    <button data-filter="سهرة">فساتين سهرة</button>
+    <button data-filter="أطفال">فساتين أطفال</button>
+  </div>
+  <div class="grid" id="productGrid"></div>
+</section>
+
+<!-- الخطوات -->
+<section class="steps" id="steps">
+  <h2 class="sec-title">كيف <em>تطلبين</em> فستانكِ؟</h2>
+  <div class="step-grid">
+    <div class="step-card"><div class="s-num">01</div><h3>اختيار الموديل</h3><p>تصفّحي التشكيلة واختياري الفستان المناسب لمناسبتكِ.</p></div>
+    <div class="step-card"><div class="s-num">02</div><h3>إرسال الطلب</h3><p>اضغطي "اطلبي الآن" واملئي النموذج — سنردّ خلال ساعات.</p></div>
+    <div class="step-card"><div class="s-num">03</div><h3>تأكيد التفاصيل</h3><p>نناقش المقاس واللون والتعديلات المطلوبة عبر واتساب.</p></div>
+    <div class="step-card"><div class="s-num">04</div><h3>التفصيل والتسليم</h3><p>يبدأ فريقنا بالتفصيل اليدوي ويُسلّم في الموعد المحدد.</p></div>
+  </div>
+</section>
+
+<!-- دليل المقاسات -->
+<section class="size-guide" id="size">
+  <h2 class="sec-title">دليل <em>المقاسات</em></h2>
+  <table class="size-table">
+    <thead><tr><th>المقاس</th><th>الصدر (سم)</th><th>الخصر (سم)</th><th>الورك (سم)</th></tr></thead>
+    <tbody>
+      <tr><td>XS</td><td>80-84</td><td>60-64</td><td>86-90</td></tr>
+      <tr><td>S</td><td>84-88</td><td>64-68</td><td>90-94</td></tr>
+      <tr><td>M</td><td>88-92</td><td>68-72</td><td>94-98</td></tr>
+      <tr><td>L</td><td>92-96</td><td>72-76</td><td>98-102</td></tr>
+      <tr><td>XL</td><td>96-100</td><td>76-80</td><td>102-106</td></tr>
+      <tr><td>XXL</td><td>100-106</td><td>80-86</td><td>106-112</td></tr>
+    </tbody>
+  </table>
+  <p class="size-note">* القياسات التقريبية. نرسل دليل قياس مفصل عبر واتساب بعد تقديم الطلب.</p>
+</section>
+
+<!-- آراء -->
+<section class="testimonials" id="testimonials">
+  <h2 class="sec-title">ماذا <em>تقول</em> عميلاتنا؟</h2>
+  <div class="testi-track" id="testiTrack">
+    <div class="testi"><div class="stars">★★★★★</div><p>"فستان زفافي تجاوز كل توقعاتي! دقة في التفاصيل وخامة فاخرة."</p><div class="who">أم عبدالرحمن<small>فستان زفاف</small></div></div>
+    <div class="testi"><div class="stars">★★★★★</div><p>"فصلوا فستان بنتي وكان أجمل من الصورة! تعامل راقٍ والتسليم في الموعد."</p><div class="who">أم سارة<small>فساتين أطفال</small></div></div>
+    <div class="testi"><div class="stars">★★★★★</div><p>"طلبت فستان سهرة عن بعد ووصلني بالضبط كما اتفقنا. احترافية نادرة."</p><div class="who">نورا ع.<small>فستان سهرة</small></div></div>
+  </div>
+</section>
+
+<!-- أسئلة -->
+<section class="faq" id="faq">
+  <h2 class="sec-title">الأسئلة <em>الشائعة</em></h2>
+  <div class="faq-list">
+    <div class="faq-item"><button class="faq-q">كم مدة تفصيل الفستان؟<span>+</span></button><div class="faq-a"><p>تتراوح بين 7-21 يوماً حسب تعقيد التصميم. نؤكد الموعد بعد مناقشة التفاصيل.</p></div></div>
+    <div class="faq-item"><button class="faq-q">هل تقبلون الطلبات من خارج صنعاء؟<span>+</span></button><div class="faq-a"><p>نعم! نوصل لجميع المحافظات اليمنية عبر شركات الشحن الموثوقة.</p></div></div>
+    <div class="faq-item"><button class="faq-q">هل يمكن تعديل اللون أو المقاس؟<span>+</span></button><div class="faq-a"><p>بالتأكيد. نناقش كل التعديلات قبل البدء بالتفصيل.</p></div></div>
+    <div class="faq-item"><button class="faq-q">ما طرق الدفع المتاحة؟<span>+</span></button><div class="faq-a"><p>نستقبل التحويل البنكي، كريمي، والدفع النقدي عند الاستلام في صنعاء.</p></div></div>
+    <div class="faq-item"><button class="faq-q">هل توجد خدمة استشارة تصميم؟<span>+</span></button><div class="faq-a"><p>نعم، نقدم استشارة مجانية عبر واتساب لمساعدتكِ في اختيار التصميم الأنسب.</p></div></div>
+  </div>
+</section>
+
+<!-- تواصل -->
+<section class="contact" id="contact">
+  <h2 class="sec-title">تواصلي <em>معنا</em></h2>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>المنال كوتور</h3>
+      <p>صنعاء، اليمن</p>
+      <p>واتساب: <a href="https://wa.me/967783339447" target="_blank">+967 783 339 447</a></p>
+      <div class="socials">
+        <a href="https://www.instagram.com/mnoalialqa/" target="_blank" aria-label="إنستغرام">📷</a>
+        <a href="https://www.facebook.com/share/19idsFfYvy/" target="_blank" aria-label="فيسبوك">📘</a>
+        <a href="https://www.tiktok.com/@mnoali68" target="_blank" aria-label="تيك توك">🎵</a>
+        <a href="https://wa.me/967783339447" target="_blank" aria-label="واتساب">💬</a>
+      </div>
+    </div>
+    <form class="contact-form" id="orderForm">
+      <h3>اطلبي فستانكِ</h3>
+      <input type="text" id="customer_name" placeholder="الاسم الكامل" required>
+      <input type="tel" id="phone" placeholder="رقم الهاتف / واتساب" required>
+      <input type="text" id="product_name" placeholder="اسم/رقم الموديل (اختياري)">
+      <textarea id="notes" rows="3" placeholder="ملاحظات: اللون، المقاس، التعديلات..."></textarea>
+      <button type="submit" class="btn-gold">إرسال الطلب</button>
+    </form>
+  </div>
+</section>
+
+<!-- فوتر -->
+<footer>
+  <p>المنال كوتور &copy; 2026 — جميع الحقوق محفوظة</p>
+  <p class="small">صُنع بأناقة يمنية · تفصيل يدوي · جودة لا تُضاهى</p>
+</footer>
+
+<!-- نموذج الطلب -->
+<div class="modal" id="orderModal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">&times;</button>
+    <h3>اطلبي هذا الموديل</h3>
+    <form id="modalForm">
+      <input type="text" id="m_name" placeholder="الاسم الكامل" required>
+      <input type="tel" id="m_phone" placeholder="رقم الهاتف" required>
+      <input type="text" id="m_product" readonly>
+      <textarea id="m_notes" rows="3" placeholder="ملاحظات..."></textarea>
+      <button type="submit" class="btn-gold">إرسال عبر واتساب</button>
+    </form>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════
+// بيانات المنتجات
+// ═══════════════════════════════════════════════
+const PRODUCTS = [
+  {img:"images/01.jpg",name:"زهرة صنعاء",cat:"زفاف",desc:"فستان زفاف بأكمام شفافة وتطريز يدوي ذهبي",dur:"14-18 يوم"},
+  {img:"images/02.jpg",name:"ليلى العروس",cat:"زفاف",desc:"تصميم كلاسيكي بذيل ملكي وكريستال سواروفسكي",dur:"18-21 يوم"},
+  {img:"images/03.jpg",name:"أحلام بلقيس",cat:"زفاف",desc:"فستان أميري بقصة منسدلة من الكتف",dur:"16-20 يوم"},
+  {img:"images/04.jpg",name:"نبض صنعاء",cat:"سهرة",desc:"فستان سهرة أحمر بقصة حورية البحر",dur:"10-14 يوم"},
+  {img:"images/05.jpg",name:"سهرات الشرق",cat:"سهرة",desc:"تصميم شرقي بكريستالات وشق جانبي",dur:"10-14 يوم"},
+  {img:"images/06.jpg",name:"لؤلؤة اليمن",cat:"سهرة",desc:"فستان أزرق ملكي بتطريز فضي يدوي",dur:"12-16 يوم"},
+  {img:"images/07.jpg",name:"نجوم الليل",cat:"سهرة",desc:"فستان أسود ساحر بنقشات ذهبية",dur:"10-14 يوم"},
+  {img:"images/08.jpg",name:"أميرة الربيع",cat:"أطفال",desc:"فستان أطفال وردي بكشكشة وتاج مطرز",dur:"7-10 أيام"},
+  {img:"images/09.jpg",name:"فرحتي الصغيرة",cat:"أطفال",desc:"فستان أبيض نقي لمناسبات الأطفال",dur:"7-10 أيام"},
+  {img:"images/10.jpg",name:"جنى الحلوة",cat:"أطفال",desc:"تصميم حلو بكشكشة متدرجة وورود",dur:"7-10 أيام"},
+  {img:"images/11.jpg",name:"درة العروس",cat:"زفاف",desc:"فستان زفاف ناعم بتطريز لؤلؤي",dur:"14-18 يوم"},
+  {img:"images/12.jpg",name:"سندس",cat:"سهرة",desc:"فستان أخضر زمردي بقصة أنيقة",dur:"10-14 يوم"},
+  {img:"images/13.jpg",name:"غزلان",cat:"أطفال",desc:"فستان أطفال رقيق بتفاصيل الدانتيل",dur:"7-10 أيام"},
+  {img:"images/14.jpg",name:"هالة القمر",cat:"زفاف",desc:"فستان زفاف فاخر بتنورة منفوشة وذيل طويل",dur:"18-21 يوم"},
+  {img:"images/15.jpg",name:"نرجس",cat:"سهرة",desc:"فستان سهرة ذهبي بلمسات شرقية",dur:"12-16 يوم"},
+  {img:"images/16.jpg",name:"ياقوتة صنعاء",cat:"زفاف",desc:"تصميم يمني أصيل بلمسات عصرية",dur:"16-20 يوم"},
+  {img:"images/17.jpg",name:"شمس الضحى",cat:"سهرة",desc:"فستان برتقالي ذهبي بكشكشة كتف",dur:"10-14 يوم"},
+  {img:"images/18.jpg",name:"زمردة",cat:"سهرة",desc:"فستان أخضر غامق بنقشة زهرية",dur:"10-14 يوم"},
+  {img:"images/19.jpg",name:"وردة الوادي",cat:"أطفال",desc:"فستان أطفال زهري بتنانير متعددة",dur:"7-10 أيام"},
+  {img:"images/20.jpg",name:"ألماسة",cat:"زفاف",desc:"فستان زفاف أبيض ناصع بتطريز كريستالي",dur:"18-21 يوم"},
+  {img:"images/21.jpg",name:"لؤلؤة البحر",cat:"سهرة",desc:"فستان أزرق فضي بلمعة ساحرة",dur:"12-16 يوم"}
+];
+
+const ADS = [
+  {text:"خصم 15% على طلبات الزفاف المبكرة",icon:"💎"},
+  {text:"توصيل مجاني لجميع المحافظات",icon:"🚚"},
+  {text:"استشارة تصميم مجانية عبر واتساب",icon:"💬"},
+  {text:"تفصيل حسب الطلب بأي لون ومقاس",icon:"✂️"}
+];
+
+// ═══════════════════════════════════════════════
+// عرض المنتجات
+// ═══════════════════════════════════════════════
+function renderProducts(filter='all'){
+  const grid = document.getElementById('productGrid');
+  grid.innerHTML = '';
+  PRODUCTS.forEach((p,i)=>{
+    if(filter !== 'all' && p.cat !== filter) return;
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.innerHTML = `
+      <div class="p-img"><img src="${p.img}" alt="${p.name}" loading="lazy"></div>
+      <div class="p-body">
+        <span class="p-cat">${p.cat}</span>
+        <h3 class="p-name">${p.name}</h3>
+        <p class="p-desc">${p.desc}</p>
+        <div class="p-dur">⏱ ${p.dur}</div>
+        <button class="p-btn" onclick="openOrder('${p.name.replace(/'/g,"\\'")}')">اطلبي هذا الموديل</button>
+      </div>`;
+    grid.appendChild(card);
+  });
+}
+
+// ═══════════════════════════════════════════════
+// فلترة
+// ═══════════════════════════════════════════════
+document.querySelectorAll('.filters button').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    renderProducts(btn.dataset.filter);
+  });
+});
+
+// ═══════════════════════════════════════════════
+// شريط الإعلانات
+// ═══════════════════════════════════════════════
+function renderTicker(){
+  const track = document.getElementById('tickerTrack');
+  if(!track) return;
+  track.innerHTML = ADS.map(a=>`<span>${a.icon} ${a.text}</span>`).join('') + ADS.map(a=>`<span>${a.icon} ${a.text}</span>`).join('');
+}
+
+// ═══════════════════════════════════════════════
+// شاشة التحميل
+// ═══════════════════════════════════════════════
+window.addEventListener('load',()=>{
+  setTimeout(()=>{
+    document.getElementById('loader').classList.add('hide');
+  },1800);
+});
+
+// ═══════════════════════════════════════════════
+// عداد الأرقام
+// ═══════════════════════════════════════════════
+const statObs = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      const el = entry.target;
+      const target = +el.dataset.target;
+      const n = el.querySelector('.n');
+      let c = 0;
+      const step = Math.max(1, Math.floor(target/40));
+      const iv = setInterval(()=>{
+        c += step;
+        if(c >= target){ c = target; clearInterval(iv);}
+        n.textContent = c + (target >= 100 ? '+' : '');
+      }, 40);
+      statObs.unobserve(el);
+    }
+  });
+});
+document.querySelectorAll('.stat').forEach(s=>statObs.observe(s));
+
+// ═══════════════════════════════════════════════
+// الجسيمات الذهبية
+// ═══════════════════════════════════════════════
+(function(){
+  const container = document.getElementById('particles');
+  if(!container) return;
+  for(let i=0;i<35;i++){
+    const d = document.createElement('div');
+    d.className = 'particle';
+    const sz = Math.random()*4+2;
+    d.style.cssText = `position:absolute;width:${sz}px;height:${sz}px;background:rgba(212,175,55,${Math.random()*0.5+0.2});border-radius:50%;left:${Math.random()*100}%;top:${Math.random()*100}%;animation:float ${Math.random()*6+4}s ease-in-out infinite;`;
+    container.appendChild(d);
+  }
+})();
+
+// ═══════════════════════════════════════════════
+// الأسئلة الشائعة
+// ═══════════════════════════════════════════════
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item = q.parentElement;
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(f=>f.classList.remove('open'));
+    if(!open) item.classList.add('open');
+  });
+});
+
+// ═══════════════════════════════════════════════
+// قائمة الجوال
+// ═══════════════════════════════════════════════
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+if(burger){
+  burger.addEventListener('click',()=>{
+    navLinks.classList.toggle('show');
+    burger.textContent = navLinks.classList.contains('show') ? '✕' : '☰';
+  });
+  navLinks.querySelectorAll('a').forEach(a=>{
+    a.addEventListener('click',()=>{
+      navLinks.classList.remove('show');
+      burger.textContent = '☰';
+    });
+  });
+}
+
+// ═══════════════════════════════════════════════
+// نموذج الطلب + واتساب
+// ═══════════════════════════════════════════════
+function openOrder(productName){
+  document.getElementById('m_product').value = productName || '';
+  document.getElementById('orderModal').style.display = 'flex';
+}
+
+document.getElementById('modalClose').addEventListener('click',()=>{
+  document.getElementById('orderModal').style.display = 'none';
+});
+
+document.getElementById('modalForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var name = document.getElementById('m_name').value.trim();
+  var phone = document.getElementById('m_phone').value.trim();
+  var pname = document.getElementById('m_product').value.trim();
+  var notes = document.getElementById('m_notes').value.trim();
+  if(!name || !phone){ alert('الرجاء تعبئة الاسم ورقم الهاتف'); return; }
+  var msg = 'مرحباً المنال كوتور،' + '%0A%0A' +
+            'اسمي: ' + encodeURIComponent(name) + '%0A' +
+            'هاتفي: ' + encodeURIComponent(phone);
+  if(pname) msg += '%0Aالفستان: ' + encodeURIComponent(pname);
+  if(notes) msg += '%0Aملاحظات: ' + encodeURIComponent(notes);
+  msg += '%0A%0Aأرغب بتأكيد الطلب.';
+  window.open('https://wa.me/967783339447?text=' + msg, '_blank');
+  document.getElementById('orderModal').style.display = 'none';
+});
+
+// نموذج التواصل
+document.getElementById('orderForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var name = document.getElementById('customer_name').value.trim();
+  var phone = document.getElementById('phone').value.trim();
+  var pname = document.getElementById('product_name').value.trim();
+  var notes = document.getElementById('notes').value.trim();
+  if(!name || !phone){ alert('الرجاء تعبئة الاسم ورقم الهاتف'); return; }
+  var msg = 'مرحباً المنال كوتور،' + '%0A%0A' +
+            'اسمي: ' + encodeURIComponent(name) + '%0A' +
+            'هاتفي: ' + encodeURIComponent(phone);
+  if(pname) msg += '%0Aالفستان: ' + encodeURIComponent(pname);
+  if(notes) msg += '%0Aملاحظات: ' + encodeURIComponent(notes);
+  msg += '%0A%0Aأرغب بتأكيد الطلب.';
+  window.open('https://wa.me/967783339447?text=' + msg, '_blank');
+});
+
+// ═══════════════════════════════════════════════
+// تمرير آراء العملاء
+// ═══════════════════════════════════════════════
+(function(){
+  const track = document.getElementById('testiTrack');
+  if(!track) return;
+  let x = 0;
+  function scroll(){
+    x -= 0.5;
+    const w = track.scrollWidth / 2;
+    if(Math.abs(x) >= w) x = 0;
+    track.style.transform = 'translateX('+x+'px)';
+    requestAnimationFrame(scroll);
+  }
+  scroll();
+})();
+
+// ═══════════════════════════════════════════════
+// إخفاء هيدر عند التمرير للأسفل
+// ═══════════════════════════════════════════════
+let lastY = 0;
+window.addEventListener('scroll',()=>{
+  const h = document.getElementById('mainHeader');
+  if(!h) return;
+  if(window.scrollY > lastY && window.scrollY > 80) h.style.transform = 'translateY(-100%)';
+  else h.style.transform = 'translateY(0)';
+  lastY = window.scrollY;
+});
+
+// ═══════════════════════════════════════════════
+// تهيئة
+// ═══════════════════════════════════════════════
+renderProducts();
+renderTicker();
+</script>
+
+</body>
+</html>
